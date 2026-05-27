@@ -1,0 +1,30 @@
+{
+  "anthropic": {
+    "api_key": "",
+    "model": "claude-sonnet-4-20250514"
+  },
+  "slack": {
+    "webhook_url": "",
+    "min_severity": "High"
+  },
+  "google_sheets": {
+    "service_account_json_path": "secrets/gcp-service-account.json",
+    "spreadsheet_url": "",
+    "worksheet_name": "risk_events"
+  },
+  "portfolio": {
+    "csv_path": "data/sample_portfolio.csv",
+    "api_url": "",
+    "api_name_field": "name",
+    "api_id_field": "id"
+  },
+  "monitoring": {
+    "max_companies": 25,
+    "official_lists": "un_sc,uk,worldbank",
+    "official_min_score": 97,
+    "ofac_min_score": 92,
+    "news_source": "google_news_rss",
+    "gdelt_max_records": 2,
+    "gdelt_sleep_s": 6.0
+  }
+}
